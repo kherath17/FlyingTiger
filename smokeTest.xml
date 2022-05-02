@@ -1,0 +1,7 @@
+<suite name="smokeTest">
+    <test name="BasicFlows">
+        <classes>
+            <class name="smokeTest" />
+        </classes>
+    </test>
+</suite>
