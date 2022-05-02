@@ -63,6 +63,7 @@ public class landPage {
     }
 
     public String signInForm() throws InterruptedException {
+        Thread.sleep(10000);
         driver.get("https://flyingtiger.com/");
         driver.findElement(By.xpath("//a[@class='navUser-action navUser-action--account']")).click();
         Thread.sleep(5000);
