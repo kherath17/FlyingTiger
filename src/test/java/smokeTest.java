@@ -14,11 +14,16 @@ public class smokeTest {
         }
 
     @Test(priority = 1)
-    public void verifyPageNav(){
+    public void verifyPageNav() throws InterruptedException, AWTException {
         landPage lp = new landPage();
         Assert.assertEquals(lp.navUrl(),"Flying Tiger Copenhagen - Shop Online");
-    }
 
+        Assert.assertEquals(lp.checkSearchTextEntered(),"Trending");
+        Assert.assertEquals(lp.navEnquiryPage(),"Enquiry Form");
+        Assert.assertEquals(lp.sideBarpop(),"Find a store");
+        Assert.assertEquals(lp.signInForm(),"My account");
+    }
+/*
     @Test (priority = 2)
     public void verifySearchBoxActive() throws InterruptedException, AWTException {
         landPage lp = new landPage();
@@ -41,6 +46,8 @@ public void verifySigninForm() throws InterruptedException {
         landPage lp = new landPage();
         Assert.assertEquals(lp.signInForm(),"My account");
 }
+
+ */
     @AfterTest
     public void quitDriver(){
         basePage.tearDown();
