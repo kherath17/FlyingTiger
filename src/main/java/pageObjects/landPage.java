@@ -38,6 +38,7 @@ public class landPage {
     }
 
     public String navEnquiryPage() throws InterruptedException {
+        Thread.sleep(10000);
         driver.get("https://flyingtiger.com/");
         driver.findElement(By.xpath("(//div[@class='custom-icon-envelop custom-icon-envelop--outer'])[1]")).click();
         Thread.sleep(5000);
