@@ -12,6 +12,9 @@ public class myAccountPage {
 
 
     public String enterDetails() throws InterruptedException, AWTException {
+        Thread.sleep(20000);
+
+
         lp.navUrl();
         driver.findElement(By.xpath("//a[@class='navUser-action navUser-action--account']")).click();
 
