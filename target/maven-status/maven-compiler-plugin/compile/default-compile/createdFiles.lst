@@ -1,2 +1,5 @@
 pageObjects\landPage.class
+pageObjects\storeLocator.class
+pageObjects\messageInq.class
+pageObjects\myAccountPage.class
 pageObjects\basePage.class
