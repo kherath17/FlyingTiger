@@ -2,9 +2,12 @@ package pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.time.Duration;
 
 public class myAccountPage {
     WebDriver driver=basePage.driver;
@@ -12,10 +15,9 @@ public class myAccountPage {
 
 
     public String enterDetails() throws InterruptedException, AWTException {
-        Thread.sleep(20000);
-
-
         lp.navUrl();
+        WebDriverWait wt = new WebDriverWait(driver, Duration.ofSeconds(120));
+        wt.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//a[@class='navUser-action navUser-action--account']"))));
         driver.findElement(By.xpath("//a[@class='navUser-action navUser-action--account']")).click();
 
         Thread.sleep(5000);
