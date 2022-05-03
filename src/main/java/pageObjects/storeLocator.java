@@ -20,6 +20,9 @@ public class storeLocator {
         rb.keyPress(KeyEvent.VK_ESCAPE);
         rb.keyRelease(KeyEvent.VK_ESCAPE);
         driver.findElement(By.xpath("//input[@class='stockist-search-field']")).sendKeys("Germany");
+        Thread.sleep(5000);
+        rb.keyPress(KeyEvent.VK_ESCAPE);
+        rb.keyRelease(KeyEvent.VK_ESCAPE);
         driver.findElement(By.xpath("//button[@aria-label='Search']")).click();
         Thread.sleep(5000);
 

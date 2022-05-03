@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-03T15:36:15 IST" name="smokeTest" finished-at="2022-05-03T15:37:34 IST" duration-ms="78924">
+  <suite started-at="2022-05-03T19:11:37 IST" name="smokeTest" finished-at="2022-05-03T19:12:42 IST" duration-ms="64990">
     <groups>
     </groups>
-    <test started-at="2022-05-03T15:36:15 IST" name="BasicFlows" finished-at="2022-05-03T15:37:34 IST" duration-ms="78924">
-      <class name="regressionTest">
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:regressionTest@212b5695]" started-at="2022-05-03T15:36:15 IST" name="setupDriver" finished-at="2022-05-03T15:36:17 IST" duration-ms="1794" status="PASS">
+    <test started-at="2022-05-03T19:11:37 IST" name="BasicFlows" finished-at="2022-05-03T19:12:42 IST" duration-ms="64990">
+      <class name="smokeTest">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:smokeTest@446293d]" started-at="2022-05-03T19:11:37 IST" name="setupDriver" finished-at="2022-05-03T19:11:41 IST" duration-ms="3702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="verifyUserLogin()[pri:0, instance:regressionTest@212b5695]" started-at="2022-05-03T15:36:17 IST" name="verifyUserLogin" finished-at="2022-05-03T15:36:44 IST" duration-ms="27593" status="PASS">
+        <test-method signature="verifyPageNav()[pri:1, instance:smokeTest@446293d]" started-at="2022-05-03T19:11:41 IST" name="verifyPageNav" finished-at="2022-05-03T19:11:48 IST" duration-ms="7017" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserLogin -->
-        <test-method signature="verifyItemAdded()[pri:1, instance:regressionTest@212b5695]" started-at="2022-05-03T15:36:44 IST" name="verifyItemAdded" finished-at="2022-05-03T15:36:59 IST" duration-ms="14942" status="PASS">
+        </test-method> <!-- verifyPageNav -->
+        <test-method signature="verifySearchBoxActive()[pri:2, instance:smokeTest@446293d]" started-at="2022-05-03T19:11:48 IST" name="verifySearchBoxActive" finished-at="2022-05-03T19:12:10 IST" duration-ms="22547" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyItemAdded -->
-        <test-method signature="verifyInquiry()[pri:2, instance:regressionTest@212b5695]" started-at="2022-05-03T15:36:59 IST" name="verifyInquiry" finished-at="2022-05-03T15:37:09 IST" duration-ms="10318" status="PASS">
+        </test-method> <!-- verifySearchBoxActive -->
+        <test-method signature="verifyInuqiryFrmNav()[pri:3, instance:smokeTest@446293d]" started-at="2022-05-03T19:12:10 IST" name="verifyInuqiryFrmNav" finished-at="2022-05-03T19:12:18 IST" duration-ms="7119" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInquiry -->
-        <test-method signature="verifyStoreLocate()[pri:3, instance:regressionTest@212b5695]" started-at="2022-05-03T15:37:09 IST" name="verifyStoreLocate" finished-at="2022-05-03T15:37:33 IST" duration-ms="23594" status="PASS">
+        </test-method> <!-- verifyInuqiryFrmNav -->
+        <test-method signature="verifySideBar()[pri:4, instance:smokeTest@446293d]" started-at="2022-05-03T19:12:18 IST" name="verifySideBar" finished-at="2022-05-03T19:12:35 IST" duration-ms="16954" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyStoreLocate -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:regressionTest@212b5695]" started-at="2022-05-03T15:37:33 IST" name="quitDriver" finished-at="2022-05-03T15:37:34 IST" duration-ms="662" status="PASS">
+        </test-method> <!-- verifySideBar -->
+        <test-method signature="verifySigninForm()[pri:5, instance:smokeTest@446293d]" started-at="2022-05-03T19:12:35 IST" name="verifySigninForm" finished-at="2022-05-03T19:12:42 IST" duration-ms="6983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySigninForm -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:smokeTest@446293d]" started-at="2022-05-03T19:12:42 IST" name="quitDriver" finished-at="2022-05-03T19:12:42 IST" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- regressionTest -->
+      </class> <!-- smokeTest -->
     </test> <!-- BasicFlows -->
   </suite> <!-- smokeTest -->
 </testng-results>

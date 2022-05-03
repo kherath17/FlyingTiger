@@ -28,7 +28,7 @@ public class myAccountPage {
         driver.findElement(By.xpath("//input[@id='customer_email']")).sendKeys("test17@gmail.com");
         driver.findElement(By.xpath("//input[@id='customer_password']")).sendKeys("test123");
 
-        Thread.sleep(5000);
+        Thread.sleep(8000);
         rb.keyPress(KeyEvent.VK_ESCAPE);
         rb.keyRelease(KeyEvent.VK_ESCAPE);
 

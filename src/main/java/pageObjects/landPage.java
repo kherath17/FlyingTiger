@@ -35,7 +35,12 @@ public class landPage {
         return  searchText;
     }
 
-    public void closeSearch(){
+    public void closeSearch() throws InterruptedException, AWTException {
+        Thread.sleep(10000);
+        Robot rb = new Robot();
+        rb.keyPress(KeyEvent.VK_ESCAPE);
+        rb.keyRelease(KeyEvent.VK_ESCAPE);
+
         driver.findElement(By.xpath("//div[@class='search-form--close']")).click();
     }
 
@@ -92,6 +97,19 @@ public class landPage {
         return  addedToCart;
 
 
+    }
+
+    public String chkWishList() throws InterruptedException, AWTException {
+        driver.get("https://flyingtiger.com/");
+        //String firstItem = driver.findElement(By.xpath("(//a[@aria-label='title'])[1]")).getText();
+        driver.findElement(By.xpath("(//a[@aria-label='wishlist'])[1]")).click();
+        driver.findElement(By.xpath("(//a[@class='navUser-action navUser-action--wishlist'])[1]")).click();
+        Thread.sleep(5000);
+        Robot rb = new Robot();
+        rb.keyPress(KeyEvent.VK_ESCAPE);
+        rb.keyRelease(KeyEvent.VK_ESCAPE);
+        String getAddedItem = driver.findElement(By.xpath("(//a[@class='cart__product-title'])[2]")).getText();
+        return  getAddedItem;
     }
 
 

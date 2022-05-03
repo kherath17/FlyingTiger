@@ -18,7 +18,7 @@ public class regressionTest {
         myAccountPage ac = new myAccountPage();
         Assert.assertEquals(ac.enterDetails(),"Log out");
     }
-/*
+
     @Test(priority = 1)
     public void verifyItemAdded() throws InterruptedException, AWTException {
         landPage lp = new landPage();
@@ -34,8 +34,11 @@ public class regressionTest {
         storeLocator st = new storeLocator();
         Assert.assertEquals(st.storeLocate(),"Germany");
     }
-
- */
+    @Test(priority = 4)
+    public void verifyWishList() throws InterruptedException, AWTException {
+        landPage lp = new landPage();
+        Assert.assertEquals(lp.chkWishList(),"Streamer");
+    }
 
     @AfterTest
     public void quitDriver(){
