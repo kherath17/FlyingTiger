@@ -31,6 +31,10 @@ public class landPage {
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(500));
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//span[@class='klevuHeadingText'])[2]"))));
 
+        Thread.sleep(5000);
+        rb.keyPress(KeyEvent.VK_ESCAPE);
+        rb.keyRelease(KeyEvent.VK_ESCAPE);
+
         String searchText=driver.findElement(By.xpath("(//span[@class='klevuHeadingText'])[2]")).getText();
         return  searchText;
     }
